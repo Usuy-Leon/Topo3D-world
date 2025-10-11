@@ -1,6 +1,6 @@
 # Topo3D-world-
 
-Get topography data from any part of the world and trasforms it in a 3D STL file ready to be printed. 
+Get topography data from any part of the world and trasforms it in a 3D STL file ready to be printed. Improve resolution beyond the ooriginal Geotiff file!!
 
 <img width="2549" height="1499" alt="Screenshot From 2025-07-25 15-05-38" src="https://github.com/user-attachments/assets/33391e51-d3ba-4ac2-a8c7-47787a2e39a9" />
 
