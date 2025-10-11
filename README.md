@@ -6,7 +6,7 @@ Get topography data from any part of the world and trasforms it in a 3D STL file
 
 Convert Digital Elevation Model (DEM) files into 3D printable mountain models with proper scaling and automatic sizing. 
 
-[output](https://github.com/user-attachments/assets/7891b18f-f359-4483-920b-d541ec56a20a)
+![output](https://github.com/user-attachments/assets/1f0f4a4a-ba7b-4223-95a6-be187c9740d0)
 
 
 # Simple Step
