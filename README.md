@@ -1,11 +1,22 @@
 # Topo3D-world-
-Get topography data from any part of the world and trasforms it in a 3D STL file ready to be printed. Convert Digital Elevation Model (DEM) files into 3D printable mountain models with proper scaling and automatic sizing. 
 
-# Simple Steps
+Get topography data from any part of the world and trasforms it in a 3D STL file ready to be printed. 
+
+<img width="2549" height="1499" alt="Screenshot From 2025-07-25 15-05-38" src="https://github.com/user-attachments/assets/33391e51-d3ba-4ac2-a8c7-47787a2e39a9" />
+
+Convert Digital Elevation Model (DEM) files into 3D printable mountain models with proper scaling and automatic sizing. 
+
+[output](https://github.com/user-attachments/assets/7891b18f-f359-4483-920b-d541ec56a20a)
+
+
+# Simple Step
+s
 ## 1. Python Packages
 
-### Install required Python packages
+### Install required Python packages!
+
   pip install numpy rasterio numpy-stl
+
   
 ## 2.Path to file
 
