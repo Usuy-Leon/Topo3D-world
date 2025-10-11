@@ -9,7 +9,7 @@ Get topography data from any part of the world and trasforms it in a 3D STL file
   
 ## 2.Path to file
 
-## Modify these paths in the script
+### Modify these paths in the script
   raw_geotiff = "path/to/your/terrain.tif"
   output_stl = "path/to/your/model.stl"
 
