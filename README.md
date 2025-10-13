@@ -22,7 +22,7 @@ Convert Digital Elevation Model (DEM) files into 3D printable mountain models wi
   3. Select data format: Make sure to pick the GeoTIFF format if there’s an option, as this is a standard file type for elevation and raster data.
      
 
-# Use the Sript
+# Use the Script
 The script does four main modifications 
 (1) Change all units to meters. 
 (2) Scale height for vizualization 
