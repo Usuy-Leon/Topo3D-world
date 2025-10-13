@@ -1,8 +1,3 @@
-"""
-GeoTIFF to 3D Printable STL Converter
-Converts Digital Elevation Model (DEM) GeoTIFF files into 3D printable STL models.
-Perfect for creating physical terrain models of mountains and landscapes.
-"""
 
 import numpy as np
 import rasterio
@@ -10,11 +5,17 @@ from rasterio.warp import calculate_default_transform, reproject, Resampling
 from rasterio.crs import CRS
 from stl import mesh
 
+
+if __name__ == "__main__":
+    # === CONFIGURATION - MODIFY THESE PATHS AND SETTINGS ===
+    
+    # File paths
+    raw_geotiff = "/path/to/your/input_dem.tif"
+    reprojected_geotiff = "/path/to/your/reprojected_dem.tif"
+    output_stl = "/path/to/your/terrain_model.stl"
+    
 def reproject_geotiff_to_utm(input_geotiff_path, output_geotiff_path, target_epsg_code):
-    """
-    Reproject GeoTIFF to UTM coordinates for accurate distance measurements.
-    UTM uses meters, making scaling for 3D printing straightforward.
-    """
+
     with rasterio.open(input_geotiff_path) as src:
         # Calculate transformation to target UTM zone
         transform, width, height = calculate_default_transform(
@@ -47,9 +48,7 @@ def reproject_geotiff_to_utm(input_geotiff_path, output_geotiff_path, target_eps
     print(f"GeoTIFF reprojected and saved to: {output_geotiff_path}")
 
 def raise_elevation_at_points(dem, transform, points, raise_height):
-    """
-    Create raised markers at specific GPS coordinates for labeling peaks/points of interest.
-    """
+
     for lon, lat in points:
         # Convert GPS coordinates to raster pixel coordinates
         col, row = ~transform * (lon, lat)
@@ -74,9 +73,7 @@ def geotiff_to_stl(
     highlight_points=None,
     raise_height=100.0
 ):
-    """
-    Convert GeoTIFF DEM to 3D printable STL with proper scaling and solid base.
-    """
+
     with rasterio.open(geotiff_path) as src:
         dem = src.read(1)  # Read elevation data
         transform = src.transform
@@ -200,14 +197,6 @@ def geotiff_to_stl(
     terrain_mesh.save(stl_path)
     print(f"STL file saved at: {stl_path}")
 
-if __name__ == "__main__":
-    # === CONFIGURATION - MODIFY THESE PATHS AND SETTINGS ===
-    
-    # File paths
-    raw_geotiff = "/path/to/your/input_dem.tif"
-    reprojected_geotiff = "/path/to/your/reprojected_dem.tif"
-    output_stl = "/path/to/your/terrain_model.stl"
-
     # UTM Zone for your area (find at: https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-)
     utm_epsg_code = 32618  # Change this to your UTM zone!
 
@@ -234,12 +223,6 @@ if __name__ == "__main__":
     desired_base_thickness_mm = 1.0  # 1mm thick base
     calculated_base_height = desired_base_thickness_mm / calculated_scale_z
     print(f"Base height: {calculated_base_height} DEM units")
-
-    # Points of interest to mark (longitude, latitude)
-    points_of_interest = [
-        (-74.0315, 4.3530),  # Replace with your coordinates
-        (-74.0319, 4.3620),
-    ]
 
     # Calculate marker height
     desired_bump_mm = 5.0  # 5mm tall markers
