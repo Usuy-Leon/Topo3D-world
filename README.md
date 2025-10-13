@@ -19,7 +19,7 @@ Convert Digital Elevation Model (DEM) files into 3D printable mountain models wi
 <img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/b91c2ebe-1121-4f75-aa67-418287d594e6" />
 
   2. Choose your area: Use the map or tools on the site to select the exact area you want the elevation data from.
-  3. Select data format: Make sure to pick the GeoTIFF format if there’s an option, as this is a standard file type for elevation and raster data.
+  3. Select data format: Make sure to pick the GeoTIFF format if there’s an option, as this is a standard file type for elevation and raster data. (do not add any vizualization extra features)
      
 
 # Use the Script
