@@ -41,12 +41,16 @@ The script does four main modifications
 ## 2.Path to file
 
 ### Modify these paths in the script
-  raw_geotiff = "path/to/your/terrain.tif"
+```python
+ raw_geotiff = "path/to/your/terrain.tif"
   output_stl = "path/to/your/model.stl"
-
+```
 ## 3. Run the script
+```python
   python geotiff_to_stl.py
 
-Enjoy
+```
+
+Enjoy!
 
 # Feel free to add or chage this repo
