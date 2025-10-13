@@ -13,7 +13,7 @@ Convert Digital Elevation Model (DEM) files into 3D printable mountain models wi
 # How to Download a GeoTIFF from OpenTopography 
  
   1. Go to the data page: Visit the specific OpenTopography link for the Shuttle Radar Topography Mission data.
-      1.1. https://portal.opentopography.org/raster?opentopoID=OTSRTM.082016.4326.1   
+     - 1.1. https://portal.opentopography.org/raster?opentopoID=OTSRTM.082016.4326.1   
 
 
 <img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/b91c2ebe-1121-4f75-aa67-418287d594e6" />
