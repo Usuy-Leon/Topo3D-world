@@ -8,7 +8,6 @@ from stl import mesh
 
 if __name__ == "__main__":
     # === CONFIGURATION - MODIFY THESE PATHS AND SETTINGS ===
-    
     # File paths
     raw_geotiff = "/path/to/yourfiles/input_dem.tif"
     reprojected_geotiff = "/path/to/your/reprojected_dem.tif"
