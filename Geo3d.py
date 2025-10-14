@@ -224,10 +224,6 @@ def geotiff_to_stl(
     calculated_base_height = desired_base_thickness_mm / calculated_scale_z
     print(f"Base height: {calculated_base_height} DEM units")
 
-    # Calculate marker height
-    desired_bump_mm = 5.0  # 5mm tall markers
-    raise_height_dem_units = desired_bump_mm / calculated_scale_z
-    print(f"Marker height: {raise_height_dem_units} DEM units")
 
     # Step 3: Generate STL
     geotiff_to_stl(
