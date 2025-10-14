@@ -10,9 +10,9 @@ if __name__ == "__main__":
     # === CONFIGURATION - MODIFY THESE PATHS AND SETTINGS ===
     
     # File paths
-    raw_geotiff = "/path/to/your/input_dem.tif"
+    raw_geotiff = "/path/to/yourfiles/input_dem.tif"
     reprojected_geotiff = "/path/to/your/reprojected_dem.tif"
-    output_stl = "/path/to/your/terrain_model.stl"
+    output_stl = "/path/to/yourfiles/terrain_model.stl"
     
 def reproject_geotiff_to_utm(input_geotiff_path, output_geotiff_path, target_epsg_code):
 
@@ -25,7 +25,7 @@ def reproject_geotiff_to_utm(input_geotiff_path, output_geotiff_path, target_eps
             src.height,
             *src.bounds
         )
-        # Update metadata for new projection
+        # Update metadata for new projection oo not modify !!
         kwargs = src.meta.copy()
         kwargs.update({
             'crs': CRS.from_epsg(target_epsg_code),
@@ -197,9 +197,14 @@ def geotiff_to_stl(
     terrain_mesh.save(stl_path)
     print(f"STL file saved at: {stl_path}")
 
+    \
+    
     # UTM Zone for your area (find at: https://mangomap.com/robertyoung/maps/69585/what-utm-zone-am-i-in-)
-    utm_epsg_code = 32618  # Change this to your UTM zone!
+    
+    utm_epsg_code = 32618  # Change this to your UTM zone!!!
 
+
+    
     # Step 1: Reproject GeoTIFF to UTM (ensures accurate meters)
     reproject_geotiff_to_utm(raw_geotiff, reprojected_geotiff, utm_epsg_code)
 
@@ -214,12 +219,12 @@ def geotiff_to_stl(
     calculated_scale_xy = desired_max_print_mm / max_dim_m  # mm per meter
     print(f"Horizontal scale: {calculated_scale_xy} mm/m")
 
-    # Vertical exaggeration (2.0 = 2x taller than real life)
+    # Vertical exaggeration (2.0 = 2x Helps a lot with visualization)
     vertical_factor = 2.0  
     calculated_scale_z = calculated_scale_xy * vertical_factor
     print(f"Vertical scale: {calculated_scale_z} mm/m")
 
-    # Calculate base thickness
+    # Calculate base thickness (keep it thin for less material)
     desired_base_thickness_mm = 1.0  # 1mm thick base
     calculated_base_height = desired_base_thickness_mm / calculated_scale_z
     print(f"Base height: {calculated_base_height} DEM units")
