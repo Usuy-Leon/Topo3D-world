@@ -44,7 +44,7 @@ def reproject_geotiff_to_utm(input_geotiff_path, output_geotiff_path, target_eps
                 dst_crs=CRS.from_epsg(target_epsg_code),
                 resampling=Resampling.nearest
             )
-    print(f"GeoTIFF reprojected and saved to: {output_geotiff_path}")
+    print(f"GeoTIFF converted and saved to: {output_geotiff_path}")
 
 def raise_elevation_at_points(dem, transform, points, raise_height):
 
