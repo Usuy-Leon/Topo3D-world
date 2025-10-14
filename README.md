@@ -42,8 +42,8 @@ The script does four main modifications
 
 ### Modify these paths in the script
 ```python
- raw_geotiff = "path/to/your/terrain.tif"
-  output_stl = "path/to/your/model.stl"
+ raw_geotiff = "path/yourfiles/terrain.tif"
+  output_stl = "path/yourfiles/model.stl"
 ```
 ## 3. Run the script
 ```python
