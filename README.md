@@ -48,8 +48,9 @@ The script does four main modifications
 ## 3. Run the script
 ```python
   python geotiff_to_stl.py
-
 ```
+
+please colaborate to make it easier to new users
 
 Enjoy!
 
