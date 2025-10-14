@@ -9,9 +9,9 @@ from stl import mesh
 if __name__ == "__main__":
     # === CONFIGURATION - MODIFY THESE PATHS AND SETTINGS ===
     # File paths
-    raw_geotiff = "/path/to/yourfiles/input_dem.tif"
-    reprojected_geotiff = "/path/to/your/reprojected_dem.tif"
-    output_stl = "/path/to/yourfiles/terrain_model.stl"
+    raw_geotiff = "/path/yourfiles/input_dem.tif"
+    reprojected_geotiff = "/path/your/reprojected_dem.tif"
+    output_stl = "/path/yourfiles/terrain_model.stl"
     
 def reproject_geotiff_to_utm(input_geotiff_path, output_geotiff_path, target_epsg_code):
 
