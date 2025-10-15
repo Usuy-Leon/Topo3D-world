@@ -1,3 +1,7 @@
+
+<div align="center">
+<div style="background-color: #1a1b1e; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+
 # Topo3D-world
 Get topography data from any part of the world and trasforms it in a 3D STL file ready to be printed. Improve resolution beyond the ooriginal Geotiff file.
 
@@ -9,7 +13,9 @@ Convert Digital Elevation Model (DEM) files into 3D printable mountain models wi
 
 ![output](https://github.com/user-attachments/assets/1f0f4a4a-ba7b-4223-95a6-be187c9740d0)
 
-
+</div>
+<div align="left">
+ 
 # How to Download a GeoTIFF from OpenTopography 
  
   1. Go to the website: Visit the specific OpenTopography link for the Shuttle Radar Topography Mission data.
