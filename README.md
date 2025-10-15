@@ -3,10 +3,18 @@
 <div style="background-color: #1a1b1e; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
 
 # Topo3D-world
+
+</div>
+<div align="left">
+ 
 Get topography data from any part of the world and trasforms it in a 3D STL file ready to be printed. Improve resolution beyond the ooriginal Geotiff file.
 
 The National Geospatial-Intelligence Agency (NGA) and NASA. Created the most complete, high-resolution topographic map of Earth, which is very useful for many scientific and practical purposes. The Shuttle Radar Topography Mission (SRTM) collected detailed elevation data for almost the entire Earth. It used a special radar system flying on the Space Shuttle Endeavour. This project data is open source and free. 
 
+     
+</div>
+<div align="center">
+ 
 <img width="2549" height="1499" alt="Screenshot From 2025-07-25 15-05-38" src="https://github.com/user-attachments/assets/33391e51-d3ba-4ac2-a8c7-47787a2e39a9" />
 
 Convert Digital Elevation Model (DEM) files into 3D printable mountain models with proper scaling and automatic sizing. 
