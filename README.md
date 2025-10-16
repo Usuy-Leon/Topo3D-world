@@ -23,6 +23,7 @@ Convert Digital Elevation Model (DEM) files into 3D printable mountain models wi
 
 </div>
 <div align="left">
+<hr>
  
 # How to Download a GeoTIFF from OpenTopography 
  
