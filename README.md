@@ -77,5 +77,5 @@ please colaborate to make it easier to new users
 
 Enjoy!
 
-# Feel free to add or chage this repo
+# Feel free to add or chage this repo, for spanish version check the LEEME.md
 </div>
